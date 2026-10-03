@@ -1,0 +1,45 @@
+{
+  "name": "collaborativewhiteboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx server/server.ts",
+    "build": "next build",
+    "start": "NODE_ENV=production tsx server/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "dotenv": "^18.0.5",
+    "ioredis": "^6.0.0",
+    "lucide-react": "^1.49.0",
+    "next": "^16.3.8",
+    "pg": "^8.23.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4",
+    "tailwind-merge": "^3.7.0",
+    "uuid": "^14.0.2",
+    "y-protocols": "^1.0.7",
+    "yjs": "^13.6.33"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^26.6.4",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
