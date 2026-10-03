@@ -146,6 +146,8 @@ All modifications to this project are systematically tracked below:
 | 2026-10-02 Redesigned | UI & Clean Aesthetics | Complete UI redesign matching reference design: light aesthetic, responsive non-overlapping layout, floating toolbar with shortcut keys (`V`, `R`, `D`, `O`, `A`, `L`, `P`, `T`, `N`, `E`), dedicated **Text tool (`T`)** with inline text editor, diamond shape, hand pan tool, bottom-left zoom & undo/redo pills, and light-theme style panel. | `src/components/toolbar/*`, `src/components/header/*`, `src/components/footer/*`, `src/canvas/tools/TextTool.ts`, `src/components/canvas/WhiteboardCanvas.tsx` |
 | 2026-10-03 Configured | Docker & DB Connectivity | Booted Docker Desktop, mapped PostgreSQL to port `5433:5432` to resolve Windows host service collision, and verified live connection to Docker PostgreSQL and Redis containers. | `docker-compose.yml`, `.env`, `.env.example`, `server/config/env.ts` |
 | 2026-10-03 Cleaned | Git Ignore & Repository | Configured production `.gitignore` excluding `.next/`, `node_modules/`, `.env`, log files, and TypeScript build cache, and purged cached build artifacts from the repository index. | `.gitignore` |
+| 2026-10-03 Security | Environment Template | Sanitized `.env.example` by replacing all actual credentials with generic placeholders (`your_postgres_password`, `your_redis_password`, etc.). | `.env.example` |
+
 
 
 
